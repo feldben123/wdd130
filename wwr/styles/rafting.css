@@ -10,6 +10,11 @@
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 800px;
 }
 
 * {
@@ -34,10 +39,14 @@ h1, h2 {
 
 nav {
     text-align: center;
+    display: flex;
+    justify-content: flex-end;
 }
 
-nav a {
+header nav a {
     padding: 20px;
+    text-decoration: none;
+    border: 1px solid black;
 }
 
 nav, p, section, article {
@@ -101,8 +110,32 @@ h2 {
 
 .socialmedia img {
     width: 100px;
+    padding: 10px;
 }
 
 footer {
     border-top: 1px dotted black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.history {
+    display: flex;
+    padding: 10px;
+}
+
+.history img {
+    width: 300px;
+    height: auto;
+}
+
+.adventure {
+    display: flex;
+    justify-content: center;
+}
+
+.adventure img {
+    width: 200px;
+    padding: 10px;
 }
