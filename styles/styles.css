@@ -16,16 +16,22 @@ body {
 nav {
     background-color: darkblue;
     padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 0;
+    text-decoration: none;
 }
 
 h1 {
     color: darkblue;
+    border-bottom: 1px dashed var(--standard);
+    padding-bottom: 5px;
 }
 
 img {
@@ -42,8 +48,18 @@ p {
     margin: 1rem;
 }
 
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
 main {
-    max-width: 700px;
+    grid-column: 2 / 3;
 }
 
 aside {
@@ -54,17 +70,14 @@ aside {
     background-color: rgb(255, 228, 228);
     color: var(--standard);
     position: relative;
+    display: grid;
+    grid-column: 1 / 2; 
+    grid-row: 1 / 2;
 }
 
 main img {
-    width: 150px;
-    height: auto;
-    border: var(--image-border) solid var(--standard);
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    margin: 10px;
     float: right;
-    margin: 0 0 1rem 1rem;
-
 }
 
 aside img {
