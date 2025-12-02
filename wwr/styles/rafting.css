@@ -139,3 +139,44 @@ footer {
     width: 200px;
     padding: 10px;
 }
+
+.centeredtext {
+    text-align: center;
+}
+
+.purpose {
+
+}
+
+.options {
+}
+
+iframe {
+    width: 50%;
+    height: 30rem;
+}
+
+.form input {
+    height: 3rem;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    max-height: 400px;
+    width: 500px;
+    padding: 20px;
+}
+
+.shorttext {
+    height: 2rem;
+}
+
+table button[type=submit] {
+    width: 50%;
+    height: 2rem;
+
+}
