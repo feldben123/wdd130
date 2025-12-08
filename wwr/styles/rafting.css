@@ -83,6 +83,17 @@ nav, p, section, article {
     color: var(--primary-color);
 }
 
+.overlay {
+    position: absolute;
+    top: 350px;
+    right: 130px;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+
+
+}
+
 .hero article {
     width: 100%;
     padding: 16px;
@@ -144,11 +155,25 @@ footer {
     text-align: center;
 }
 
-.purpose {
-
+.main {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
 }
 
-.options {
+.main label {
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.main button {
+    width: 150px;
+    margin-left: 20px;
+}
+
+.spacing {
+    margin: 10px 0px;
 }
 
 iframe {
@@ -158,6 +183,12 @@ iframe {
 
 .form input {
     height: 3rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
 }
 
 .contact {
@@ -178,5 +209,39 @@ table {
 table button[type=submit] {
     width: 50%;
     height: 2rem;
+}
 
+.other {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.other img {
+    width: 300px;
+    height: auto;
+}
+
+.other figure {
+    grid-row: 1
+}
+
+.trips {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.trips figcaption {
+    width: 1000px;
+}
+
+.adventures {
+    margin: 50px auto;
+    border-collapse: collapse;
+}
+
+.adventures td, th {
+    border: 1px solid black;
+    padding: 5px;
 }
